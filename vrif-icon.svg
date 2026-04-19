@@ -1,0 +1,66 @@
+<svg width="420" height="180" viewBox="0 0 420 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vrifFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d7ff5a"/>
+      <stop offset="55%" stop-color="#98e82c"/>
+      <stop offset="100%" stop-color="#5eb517"/>
+    </linearGradient>
+  </defs>
+
+  <!-- main word -->
+  <g font-family="Arial Black, Impact, sans-serif"
+     font-size="92"
+     font-weight="900"
+     text-anchor="middle"
+     letter-spacing="-10">
+
+    <!-- dark outline/shadow layer -->
+    <text x="202" y="88"
+          fill="#1e3410"
+          transform="translate(4 6)">Vrif</text>
+
+    <!-- main letters -->
+    <text x="200" y="88"
+          fill="url(#vrifFill)"
+          stroke="#1f2f12"
+          stroke-width="8"
+          paint-order="stroke fill">Vrif</text>
+
+    <!-- top gloss -->
+    <text x="198" y="85"
+          fill="#ffffff"
+          opacity="0.28">Vrif</text>
+  </g>
+
+  <!-- subtitle -->
+  <text x="212" y="126"
+        text-anchor="middle"
+        font-family="Verdana, Arial, sans-serif"
+        font-size="15"
+        font-weight="700"
+        letter-spacing="2"
+        fill="#1e3410">
+    TOTALLY ORIGINAL
+  </text>
+  <text x="210" y="125"
+        text-anchor="middle"
+        font-family="Verdana, Arial, sans-serif"
+        font-size="15"
+        font-weight="700"
+        letter-spacing="2"
+        fill="url(#vrifFill)">
+    TOTALLY ORIGINAL
+  </text>
+  <text x="208" y="124"
+        text-anchor="middle"
+        font-family="Verdana, Arial, sans-serif"
+        font-size="15"
+        font-weight="700"
+        letter-spacing="2"
+        fill="#ffffff"
+        opacity = "0.28"
+    >
+        
+    TOTALLY ORIGINAL
+  </text>
+</svg>

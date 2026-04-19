@@ -1,0 +1,26 @@
+<svg width="1400" height="420" viewBox="0 0 1400 420" xmlns="http://www.w3.org/2000/svg">
+    <g id="road" transform="rotate(0, 0, 0)">
+        <!-- wide road only -->
+        <rect width="1400" height="420" fill="#35383d"/>
+
+        <!-- subtle top/bottom shading -->
+        <rect x="0" y="0" width="1400" height="10" fill="#4b4f56" opacity="0.55"/>
+        <rect x="0" y="410" width="1400" height="10" fill="#23262b" opacity="0.55"/>
+
+        <!-- outer lane lines -->
+        <rect x="0" y="28" width="1400" height="8" rx="4" fill="#ffffff" opacity="0.95"/>
+        <rect x="0" y="384" width="1400" height="8" rx="4" fill="#ffffff" opacity="0.95"/>
+
+        <!-- center dashed line -->
+        <g fill="#f5e6a9">
+            <rect x="40" y="202" width="110" height="16" rx="8"/>
+            <rect x="210" y="202" width="110" height="16" rx="8"/>
+            <rect x="380" y="202" width="110" height="16" rx="8"/>
+            <rect x="550" y="202" width="110" height="16" rx="8"/>
+            <rect x="720" y="202" width="110" height="16" rx="8"/>
+            <rect x="890" y="202" width="110" height="16" rx="8"/>
+            <rect x="1060" y="202" width="110" height="16" rx="8"/>
+            <rect x="1230" y="202" width="110" height="16" rx="8"/>
+        </g>
+    </g>
+</svg>

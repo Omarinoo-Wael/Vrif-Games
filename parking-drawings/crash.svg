@@ -1,0 +1,61 @@
+<svg width="220" height="160" viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg">
+    <!-- burst shape -->
+    <polygon
+        points="110,10 128,42 170,20 155,58 205,52 168,82 210,110 158,108 172,148 130,122 110,155 90,122 48,148 62,108 10,110 52,82 15,52 65,58 50,20 92,42"
+        fill="red"
+        stroke="black"
+        stroke-width="4"
+    />
+    <polygon
+        points="110,10 128,42 170,20 155,58 205,52 168,82 210,110 158,108 172,148 130,122 110,155 90,122 48,148 62,108 10,110 52,82 15,52 65,58 50,20 92,42"
+        fill="yellow"
+        stroke="black"
+        stroke-width="4"
+        transform = "translate(33, 25) scale(0.7)"
+    />
+    <polygon
+        points="110,10 128,42 170,20 155,58 205,52 168,82 210,110 158,108 172,148 130,122 110,155 90,122 48,148 62,108 10,110 52,82 15,52 65,58 50,20 92,42"
+        fill="yellow"
+        stroke="black"
+        stroke-width="4"
+        transform = "translate(3, 30) scale(0.3)"
+    />
+    <polygon
+        points="110,10 128,42 170,20 155,58 205,52 168,82 210,110 158,108 172,148 130,122 110,155 90,122 48,148 62,108 10,110 52,82 15,52 65,58 50,20 92,42"
+        fill="yellow"
+        stroke="black"
+        stroke-width="4"
+        transform = "translate(130, 90) scale(0.3)"
+    />
+
+    <!-- text -->
+    <text
+        x="108"
+        y="99"
+        text-anchor="middle"
+        font-size="39"
+        font-weight="bold"
+        font-family="Impact, Arial Black, sans-serif"
+        fill="black"
+        stroke="black"
+        stroke-width="0.5"
+        opacity = "0.9"
+        transform = "rotate(-15,105,80)"
+    >
+        CRASH!
+    </text>
+    <text
+        x="110"
+        y="95"
+        text-anchor="middle"
+        font-size="40"
+        font-weight="bold"
+        font-family="Impact, Arial Black, sans-serif"
+        fill="red"
+        stroke="black"
+        stroke-width="0.5"
+        transform = "rotate(-15,105,80)"
+    >
+        CRASH!
+    </text>
+</svg>

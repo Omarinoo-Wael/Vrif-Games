@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vrif - Select Level</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="menu-body">
+    <form>
+        <h1 class="menu-h1">Select Mission</h1>
+    
+        <div class="levels-container">
+            <div class="level-card">
+                <a href="parking.html?level=1" class="level-link">
+                    <div class="level-number">01</div>
+                    <div class="level-title">The Basics</div>
+                </a>
+            </div>
+
+            <div class="level-card">
+                <a href="parking.html?level=2" class="level-link">
+                    <div class="level-number">02</div>
+                    <div class="level-title">Tight Squeeze</div>
+                </a>
+            </div>
+
+            <div class="level-card">
+                <a href="parking.html?level=3" class="level-link">
+                    <div class="level-number">03</div>
+                    <div class="level-title">Night Shift</div>
+                </a>
+            </div>
+        </div>
+        <p>Game Speed: </p>
+            
+        <input type="radio" id="frame" name="difficulty" value="frame-based" checked>
+        <label for="frame">Frame Based</label><br>
+
+        <input type="radio" id="time" name="difficulty" value="time-based">
+        <label for="time">Time Based</label><br>
+    </form>
+
+        <script>
+            document.addEventListener("click", (e)=>{
+                const link = e.target.closest('.level-link')
+                if(link)
+                {
+                    e.preventDefault();
+                    const diff = document.querySelector('input[name="difficulty"]:checked').value;
+                    sessionStorage.setItem("value",diff);
+                    location.href=link.getAttribute('href');
+                }
+            })
+
+            document.addEventListener("DOMContentLoaded",(e) => {
+                const frameRadio = document.getElementById("frame");
+                const timeRadio = document.getElementById("time");
+
+                const savedEngine = sessionStorage.getItem("value");
+
+                if(savedEngine==="frame-based")
+                {
+                    frameRadio.checked=true;
+                }
+                else if(savedEngine === "time-based")
+                {
+                    timeRadio.checked=true;
+                }
+            })
+        </script>
+
+    <br>
+    <a href="parking-menu.html" class="back-link">← Back to Menu</a>
+</body>
+</html>
