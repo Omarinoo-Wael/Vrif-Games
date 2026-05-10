@@ -1,27 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parking Game</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
-        canvas {
-            background-color: rgb(94, 90, 85);
-            background-image: url("parking-drawings/bg.svg");
-        }
+      canvas {
+        background-color: rgb(94, 90, 85);
+        background-image: url("parking-drawings/bg.svg");
+      }
     </style>
-</head>
-<body onload="startGame()" class="game-body">
+  </head>
+  <body onload="startGame()" class="game-body">
     <canvas id="myCanvas" width="800" height="600"></canvas>
+    <div id="touchpad">
+      <div
+        class="touch-btn"
+        style="grid-area: up"
+        id="btn-up"
+        onmousedown="keys.ArrowUp = true"
+        onmouseup="keys.ArrowUp = false"
+        ontouchstart="event.preventDefault(); keys.ArrowUp = true"
+        ontouchend="event.preventDefault(); keys.ArrowUp = false"
+      >
+        ▲
+      </div>
+      <div
+        class="touch-btn"
+        style="grid-area: left"
+        id="btn-left"
+        onmousedown="keys.ArrowLeft = true"
+        onmouseup="keys.ArrowLeft = false"
+        ontouchstart="event.preventDefault(); keys.ArrowLeft = true"
+        ontouchend="event.preventDefault(); keys.ArrowLeft = false"
+      >
+        ◀
+      </div>
+      <div
+        class="touch-btn"
+        style="grid-area: down"
+        id="btn-down"
+        onmousedown="keys.ArrowDown = true"
+        onmouseup="keys.ArrowDown = false"
+        ontouchstart="event.preventDefault(); keys.ArrowDown = true"
+        ontouchend="event.preventDefault(); keys.ArrowDown = false"
+      >
+        ▼
+      </div>
+      <div
+        class="touch-btn"
+        style="grid-area: right"
+        id="btn-right"
+        onmousedown="keys.ArrowRight = true"
+        onmouseup="keys.ArrowRight = false"
+        ontouchstart="event.preventDefault(); keys.ArrowRight = true"
+        ontouchend="event.preventDefault(); keys.ArrowRight = false"
+      >
+        ▶
+      </div>
+    </div>
+    <div class="mobile-nav">
+      <button class="nav-btn" onclick="window.location.reload()">
+        Restart (R)
+      </button>
+      <button
+        class="nav-btn"
+        onclick="window.location.replace('parking-levels.html')"
+      >
+        Menu (F)
+      </button>
+    </div>
+    <audio src="./parking-drawings/crash.mp3" id="crash" preload="auto"></audio>
+    <audio
+      src="./parking-drawings/bgMusic.mp3"
+      id="music"
+      preload="auto"
+    ></audio>
     <div class="ad">
-        <img src="parking-drawings/subway.webp" alt="AD"/>
+      <img src="parking-drawings/subway.webp" alt="AD" />
     </div>
     <div class="ad2">
-        <img src="parking-drawings/subway.webp" alt="AD"/>
+      <img src="parking-drawings/subway.webp" alt="AD" />
     </div>
     <script src="parking.js"></script>
-    
-
-</body>
+  </body>
 </html>
